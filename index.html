@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+</head>
+<body>
+    <!-- Ordered list with Roman numerals -->
+    <h2>Steps to Success:</h2>
+    <ol type="I">
+        <li>Keyboard</li>
+        <li>Mouse</li>
+        <li>Monitor</li>
+        <li>Speakers</li>
+        <li>Headphones</li>
+    </ol>
+    
+
+    <!-- External image from Pexels -->
+    <h2>External Image from Pexels</h2>
+    <img src="https://images.pexels.com/photos/15286/pexels-photo.jpg" alt="Scenic mountain view" width="500">
+
+    <!-- Multimedia Section -->
+    <h3>Sample Audio</h3>
+    <audio controls>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <h3>Sample Video</h3>
+    <video width="100%" controls poster="https://images.pexels.com/photos/4275885/pexels-photo-4275885.jpeg">
+        <source src="https://samplelib.com/lib/preview/mp4/sample-5s.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Contacts table -->
+    <h2>Contact List</h2>
+    <table border="1" cellpadding="8" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Simon</td>
+                <td>Nyeri</td>
+                <td>+254722345453</td>
+                <td>simon@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Jane</td>
+                <td>Nairobi</td>
+                <td>+2547567890</td>
+                <td>jane@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Samuel</td>
+                <td>Kisumu</td>
+                <td>+254722347893</td>
+                <td>samuel@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Doris</td>
+                <td>Mombasa</td>
+                <td>+2212547890</td>
+                <td>doris@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Charlie</td>
+                <td>Nakuru</td>
+                <td>+25472234092</td>
+                <td>charlie@gmail.com</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Registration Form -->
+    <h2>Registration Form</h2>
+    <form action="/submit" method="post" novalidate>
+
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" 
+               required minlength="3" maxlength="50" pattern="[A-Za-z ]+">
+        <br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" 
+               required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+        <br><br>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Create a password (8+ characters)" 
+               minlength="8" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+        <br><br>
+        
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required 
+               min="1900-01-01" max="2023-12-31">
+        <br><br>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="" disabled selected>Select your country</option>
+            <option value="us">Kenya</option>
+            <option value="ca">Uganda</option>
+            <option value="uk">Tanzania</option>
+            <option value="au">Rwanda</option>
+            <option value="other">Other</option>
+        </select>
+        <br><br>
+        
+        <label>Gender:</label>
+        <div>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+            
+            <input type="radio" id="prefer-not" name="gender" value="prefer-not">
+            <label for="prefer-not">Prefer not to say</label>
+        </div>
+        <br>
+        
+        <label>Interests:</label>
+        <div>
+            <input type="checkbox" id="sports" name="interests" value="sports" required>
+            <label for="sports">Sports</label>
+            
+            <input type="checkbox" id="music" name="interests" value="music">
+            <label for="music">Music</label>
+            
+            <input type="checkbox" id="reading" name="interests" value="reading">
+            <label for="reading">Reading</label>
+            
+            <input type="checkbox" id="travel" name="interests" value="travel">
+            <label for="travel">Travel</label>
+            
+            <input type="checkbox" id="tech" name="interests" value="tech">
+            <label for="tech">Technology</label>
+        </div>
+        <br>
+            
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
